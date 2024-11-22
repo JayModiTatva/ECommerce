@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SharedModule } from '../../common/shared.module';
-// import {
-//   CarouselComponent,
-//   CarouselControlComponent,
-//   CarouselIndicatorsComponent,
-//   CarouselInnerComponent,
-//   CarouselItemComponent,
-// } from '@coreui/angular';
 
 @Component({
   selector: 'app-product-list',

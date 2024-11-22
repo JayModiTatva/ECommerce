@@ -1,7 +1,6 @@
 import { iDocument } from "./document.interface";
 
 export interface iProduct {
-
   id: number;
   name: string;
   price: number;
@@ -12,5 +11,4 @@ export interface iProduct {
   stockQuantity: number;
   rating: number;
   documents: iDocument[];
-
 }

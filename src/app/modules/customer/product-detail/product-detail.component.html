@@ -1,16 +1,33 @@
-<div class="container mt-4">
-  <div class="row">
-      <div class="col-md-4">
-  <div *ngIf="product">
-      <img src="https://via.placeholder.com/150" class="card-img-top" alt="{{ product.name }}">
-    <h2>{{ product.name }}</h2>
-    <p>Price: ${{ product.price }}</p>
-    <button class="btn btn-primary">Add to Cart</button>
+<div class="container mt-5">
+  <div *ngIf="product; else notFound" class="text-center">
+    <div class="card border-0 shadow-lg p-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img
+            [src]="product.imageUrl"
+            class="img-fluid rounded mb-4"
+            alt="{{ product.name }}"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h1 class="fw-bold">{{ product.name }}</h1>
+          <p class="text-muted">{{ product.description }}</p>
+          <h4 class="text-primary">Price: ${{ product.price }}</h4>
+          <div class="mt-4">
+            <button class="btn btn-lg btn-success me-3">Add to Cart</button>
+            <button class="btn btn-lg btn-outline-secondary">Continue Shopping</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div *ngIf="!product">
-    <p>Product not found.</p>
-  </div>
+  <ng-template #notFound>
+    <div class="alert alert-warning text-center mt-5" role="alert">
+      <h4>Product not found.</h4>
+      <p>We couldn't find the product you're looking for.</p>
+      <a routerLink="/" class="btn btn-primary">Back to Home</a>
+    </div>
+  </ng-template>
 </div>
-</div>
-</div>
-

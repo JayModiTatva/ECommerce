@@ -9,7 +9,6 @@ const routes: Routes = [
     redirectTo: 'customer',
     pathMatch: 'full',
   },
-
   {
     path: 'customer',
     loadChildren: () =>

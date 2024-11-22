@@ -2,7 +2,6 @@ import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-
 @Component({
   selector: 'app-custom-carousel',
   templateUrl: './custom-carousel.component.html',
@@ -18,7 +17,6 @@ export class CustomCarouselComponent {
   ];
 
   ngOnInit(): void {
-
   }
 
 }
