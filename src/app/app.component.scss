@@ -1,0 +1,56 @@
+/* Ensure the entire viewport height is used */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  flex: 1; /* This pushes the footer to the bottom */
+  padding: 20px; 
+}
+
+footer.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 20px 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #343a40;
+}
+
+footer p,
+footer a {
+  color: #6c757d;
+}
+
+footer a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  padding: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  footer h5 {
+    font-size: 1rem;
+  }
+  footer p, footer a {
+    font-size: 0.9rem;
+  }
+}

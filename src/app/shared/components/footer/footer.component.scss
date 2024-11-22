@@ -1,0 +1,46 @@
+/* Compact Footer Styling */
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 2px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer h6 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+.footer a:hover {
+  color: rebeccapurple!important;
+  text-decoration: none;
+}
+
+/* Footer bottom strip */
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  padding: 5px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .footer h6 {
+    font-size: 0.9rem;
+  }
+  .footer p, .footer a {
+    font-size: 0.8rem;
+  }
+}
